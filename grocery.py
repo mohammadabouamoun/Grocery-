@@ -13,4 +13,13 @@ while True :
      cart.append(ask)
     else :
      print("Sorry, we don’t have that item.")
-        
+
+print("You bought:", cart)
+total = 0 
+for item in cart:
+   total += groceries[item]
+print("Total = $" + str(total))   
+if total > 10:
+    print("You spent a lot!")
+else:
+    print("You spent a little!")       
